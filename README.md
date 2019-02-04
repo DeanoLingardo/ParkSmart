@@ -1,2 +1,2 @@
 ## Welcome
-![alt text](public/logo.png)
+![alt text](public/twitter_header_photo_2.png)
