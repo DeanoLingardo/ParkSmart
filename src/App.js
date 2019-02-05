@@ -37,13 +37,13 @@ import {
       return (
       <Router>
           <div>
-            <Navbar color="dark" expand="md">
-            <NavbarBrand href="/">ParkSmart</NavbarBrand>
+            <Navbar color="dark" dark expand="md">
+            <NavbarBrand href="/" >ParkSmart</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-              <Link to={'/'} className="nav-link"> Home </Link>
+              <Link to={'/'} className="nav-link">Home</Link>
               </NavItem>
               <NavItem>
               <Link to={'/profile'} className="nav-link">Profile</Link>
