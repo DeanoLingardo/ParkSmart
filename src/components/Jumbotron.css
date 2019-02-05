@@ -1,7 +1,4 @@
 .Jumbotron {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  color: black;
-  padding: none;
+   background: url("./bg6.jpg") no-repeat center center;
+   background-size: 100% auto;
 }

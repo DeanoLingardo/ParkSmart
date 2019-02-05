@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
-import About from './components/About';
-import Profile from './components/Profile';
+import Visitor from './components/Visitor';
+import Permit from './components/Permit';
 import './App.css';
 import {
   Collapse,
@@ -47,25 +47,22 @@ import {
               <Link to={'/'} className="nav-link">Home</Link>
               </NavItem>
               <NavItem>
-              <Link to={'/profile'} className="nav-link">Profile</Link>
+              <Link to={'/permit'} className="nav-link">Permit</Link>
               </NavItem>
               <NavItem>
-              <Link to={'/about'} className="nav-link">About</Link>
+              <Link to={'/about'} className="nav-link">Visitor</Link>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  Options
+                  Account
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
+                    Options
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    Reset
+                    Logout
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
@@ -74,8 +71,8 @@ import {
             </Navbar>
             <Switch>
                 <Route exact path='/' component={Home} />
-                <Route path='/profile' component={Profile} />
-                <Route path='/about' component={About} />
+                <Route path='/permit' component={Permit} />
+                <Route path='/about' component={Visitor} />
             </Switch>
           </div>
         </Router>

@@ -21,11 +21,10 @@ import {
 class Home extends Component {
   render() {
     return (
-      <div >
-      <Jumbotron fluid>
+      <div>
+      <Jumbotron fluid  className="Jumbotron">
         <Container fluid>
-       <h1 className="display-3">Home</h1>
-       <p className="lead">This is the Home page.</p>
+       <h1><Badge className="display-3" color="dark">Home</Badge></h1>
      </Container>
    </Jumbotron>
  </div>
