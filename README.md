@@ -1,13 +1,10 @@
 ![Logo](public/twitter_header_photo_2.png)
-# Product Name
-> Short blurb about what your product does.
+# Welcome to the ParkSmart project
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+This project is aiming to create an automated cloud based parking management system using existing IP cameras or the supplied camera created with a raspberry pi and a camera module.
 
-One to two paragraph statement about your product and what it does.
-
+Front-End: React, Reactstrap
+Back-End: OpenAPLR, Avaya
 ## Installation
 
 OS X & Linux:
