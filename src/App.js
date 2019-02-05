@@ -11,7 +11,8 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  DropdownItem,
+  Button } from 'reactstrap';
 
 
 export default class example extends React.Component {
@@ -62,6 +63,8 @@ export default class example extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
+        <Button color="secondary" size="lg" block>Test button</Button>
+
       </div>
     );
   }
