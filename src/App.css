@@ -22,9 +22,13 @@
   color: #000000;
 }
 
-.nnav-link{
-  color: #ffffff;
-  text-decoration: none;
+.nav-image{
+  width:25px;
+  padding-right: 5px;
+}
+
+.nav-color{
+  color: #393E46;
 }
 
 

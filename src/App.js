@@ -38,7 +38,8 @@ import {
       <Router>
           <div>
             <Navbar color="dark" dark expand="md">
-            <NavbarBrand href="/" >ParkSmart</NavbarBrand>
+            <img src="fav.png" class="nav-image" alt="logo"></img>
+            <NavbarBrand href="" >ParkSmart</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
