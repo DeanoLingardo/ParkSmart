@@ -4,6 +4,7 @@
 This project is aiming to create an automated cloud based parking management system using existing IP cameras or the supplied camera created with a raspberry pi and a camera module.
 
 Front-End: React, Reactstrap
+
 Back-End: OpenAPLR, Avaya
 ## Installation
 

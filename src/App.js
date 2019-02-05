@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Profile from './components/Profile';
 import './App.css';
 import {
   Collapse,
   Navbar,
+  Badge,
   NavbarToggler,
   NavbarBrand,
   Nav,
@@ -14,34 +19,37 @@ import {
   DropdownItem,
   Button } from 'reactstrap';
 
+  export default class App extends React.Component {
+    constructor(props) {
+      super(props);
 
-export default class example extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
-  render() {
-    return (
-      <div>
-        <Navbar color="dark" dark expand="md">
-          <NavbarBrand href="/">ParkSmart</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
+      this.toggle = this.toggle.bind(this);
+      this.state = {
+        isOpen: false
+      };
+    }
+    toggle() {
+      this.setState({
+        isOpen: !this.state.isOpen
+      });
+    }
+    render() {
+      return (
+      <Router>
+          <div>
+            <Navbar color="dark" expand="md">
+            <NavbarBrand href="/">ParkSmart</NavbarBrand>
+            <NavbarToggler onClick={this.toggle} />
+            <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Profile</NavLink>
+              <Link to={'/'} className="nav-link"> Home </Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/">Booking</NavLink>
+              <Link to={'/profile'} className="nav-link">Profile</Link>
+              </NavItem>
+              <NavItem>
+              <Link to={'/about'} className="nav-link">About</Link>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
@@ -56,16 +64,22 @@ export default class example extends React.Component {
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    Logout
+                    Reset
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>
-          </Collapse>
-        </Navbar>
-        <Button color="secondary" size="lg" block>Test button</Button>
 
-      </div>
-    );
+            </Collapse>
+            </Navbar>
+            <hr />
+            <Switch>
+                <Route exact path='/' component={Home} />
+                <Route path='/profile' component={Profile} />
+                <Route path='/about' component={About} />
+            </Switch>
+          </div>
+        </Router>
+      );
+    }
   }
-}
