@@ -1,5 +1,5 @@
 // Home.js
-
+import './Jumbotron.css';
 import React, { Component } from 'react';
 import {
   Collapse,
@@ -21,7 +21,7 @@ import {
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div >
       <Jumbotron fluid>
         <Container fluid>
        <h1 className="display-3">Home</h1>

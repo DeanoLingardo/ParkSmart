@@ -70,10 +70,8 @@ import {
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>
-
             </Collapse>
             </Navbar>
-            <hr />
             <Switch>
                 <Route exact path='/' component={Home} />
                 <Route path='/profile' component={Profile} />
