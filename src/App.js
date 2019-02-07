@@ -50,15 +50,15 @@ import {
               <Link to={'/permit'} className="nav-link">Permit</Link>
               </NavItem>
               <NavItem>
-              <Link to={'/about'} className="nav-link">Visitor</Link>
+              <Link to={'/about'} className="nav-link">Requests</Link>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   Account
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>
-                    Options
+                  <DropdownItem href="https://cloud.openalpr.com/">
+                    Administrator
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
