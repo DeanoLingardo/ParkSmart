@@ -1,20 +1,9 @@
 import React, { Component } from 'react';
 import {
-  Collapse,
-  Navbar,
   Badge,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
   Jumbotron,
   Container,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  Button } from 'reactstrap';
+ } from 'reactstrap';
 
 class Profile extends Component {
   render() {

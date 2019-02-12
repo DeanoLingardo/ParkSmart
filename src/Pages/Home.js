@@ -1,29 +1,15 @@
 // Home.js
 import './../components/JumbotronModule/Jumbotron.css';
 import React, { Component } from 'react';
-import { render } from 'react-dom';
 import Linedemo from './../components/ChartsModule/Linedemo.js';
 import {
-  Collapse,
-  Navbar,
-  Badge,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  Jumbotron,
-  Container,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  Col,
-  Card,
-  CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle,
-  Row,
-  Button } from 'reactstrap';
+    Badge,
+    Jumbotron,
+    Container,
+    Card,
+    CardBody,
+    CardTitle, CardSubtitle,Row, Col
+   } from 'reactstrap';
 
 export default class Home extends Component {
   render() {
