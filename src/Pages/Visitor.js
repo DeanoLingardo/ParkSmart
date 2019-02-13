@@ -12,7 +12,7 @@ class About extends Component {
       <div>
       <Jumbotron fluid  className="Jumbotron">
         <Container fluid>
-       <h1><Badge className="display-3" color="dark">Visitor</Badge></h1>
+       <h1><Badge className="display-3" color="dark">Visitor Requests</Badge></h1>
      </Container>
    </Jumbotron>
  </div>
