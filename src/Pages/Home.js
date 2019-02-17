@@ -5,6 +5,8 @@ import { Badge, Container, Row, Col, Jumbotron } from 'reactstrap';
 import './../components/JumbotronModule/Jumbotron.css';
 
 
+
+
 //HOME PAGE
 export default class Home extends Component {
   render() {
@@ -18,15 +20,16 @@ export default class Home extends Component {
    <Container>
      <Row>
           <Col class="xs-3" align="center">
-          <Linedemo/>
           </Col>
           <Col class="xs-3" align="center">
           <Linedemo/>
           </Col>
         </Row>
         </Container>
-
- </div>
+        <div id="mybutton">
+        <button class="feedback">Help</button>
+        </div>
+        </div>
     );
   }
 }
