@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import './../components/JumbotronModule/Jumbotron.css';
-
+import JumbotronComponent from './../JumbotronModule/JumbrotronComponent.js';
 import {
-  Badge,
-  Jumbotron,
   Container,
   Nav,
   NavLink,
@@ -15,17 +12,12 @@ import {
 export default class Profile extends Component {
   render() {
     return (
-      <div>
-      <Jumbotron fluid  className="Jumbotron">
-        <Container fluid>
-       <h1><Badge className="display-3" color="dark">Your Permit</Badge></h1>
-     </Container>
-   </Jumbotron>
-
+      <div className="loginstyle">
+        <JumbotronComponent headerProp="Permit"/>
    <Container fluid>
    <Row>
              <Col xs="2">
-             <Nav style={{backgroundColor: '#f1f1f1'}} vertical>
+             <Nav vertical>
              <NavItem>
                <NavLink active href="#">Status</NavLink>
              </NavItem>

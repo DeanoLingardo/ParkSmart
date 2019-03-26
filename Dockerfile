@@ -3,6 +3,6 @@ WORKDIR /app
 COPY package.json /app
 RUN npm install
 COPY . /app
-ENV SERVER_PORT 9090
-EXPOSE 8080
-CMD npm run build && npm start
+ENV SERVER_PORT 8080
+EXPOSE 5000
+CMD npm start

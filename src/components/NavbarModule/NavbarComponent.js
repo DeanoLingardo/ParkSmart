@@ -1,22 +1,12 @@
 import React from 'react';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, } from 'reactstrap';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Home from '../../Pages/Home.js';
-import Visitor from '../..//Pages/Visitor.js';
-import Permit from '../..//Pages/Permit.js';
+import Home from '../Pages/Home.js';
+import Visitor from '../Pages/Visitor.js';
+import Permit from '../Pages/Permit.js';
+import Login from '../Pages/Login.js';
 import '../../Styles/App.css';
 
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
- } from 'reactstrap';
 
 export default class NavbarComponent extends React.Component {
   constructor(props) {
@@ -64,7 +54,7 @@ export default class NavbarComponent extends React.Component {
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
-                  Logout
+                    <Link to={'/login'} >Logout</Link>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
@@ -75,6 +65,7 @@ export default class NavbarComponent extends React.Component {
               <Route exact path='/' component={Home} />
               <Route path='/permit' component={Permit} />
               <Route path='/about' component={Visitor} />
+                <Route path='/login' component={Login} />
           </Switch>
         </div>
       </Router>
